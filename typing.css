@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/*
+*******************************************
+* written by Wizard67 on 2016-11-25       *
+* https://github.com/Wizard67/typing.css  *
+*******************************************
+*/
+@font-face {
+  font-family: "Biaodian";
+  src:
+    local("PingFang SC"),
+    local("Hiragino Sans GB"),
+    local("Microsoft YaHei UI Light"),
+    local("Microsoft YaHei Light"),
+    local("Microsoft YaHei")
+  ;
+  unicode-range: U+201C-201D, U+2018-2019,
+                 U+0020, U+3000,
+                 U+2014,
+                 U+3002, U+FF0C, U+3001,
+                 U+FF1B, U+FF1A, U+FF1F, U+FF01,
+                 U+FF0D, U+FF0F, U+FF3C,
+                 U+007c;
+}
+
+html {
+  font-family: "Biaodian",
+               -apple-system , BlinkMacSystemFont,
+               "Helvetica Neue","Segoe UI","Roboto",
+               "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei UI Light","Microsoft YaHei Light","Microsoft YaHei",
+               "Noto Sans CJK",
+               "WenQuanYi Micro Hei",
+               sans-serif;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+/******************************************************************************/
+/*** PHONE ***/
+@media (max-width:544px) {
+  html {
+    font-size: 87.5px;
+  }
+  /*font-size: 14px*/
+  .typing {
+    padding: .2rem;
+    padding: 4vw;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .typing h1 {
+    margin: .6em 0 1.2em 0;
+    font-size: .224rem;
+  }
+  .typing h2 {
+    margin: 2.6em 0 .85em 0;
+    font-size: .196rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2em 0 1em 0;
+    font-size: .168rem;
+  }
+  .typing p {
+    margin: 1.2em 0 .8em 0;
+  }
+}
+/** PHONE **/
+@media (min-width: 545px) and (max-width:768px) {
+  html {
+    font-size: 87.5px;
+  }
+  /*font-size: 14px*/
+  .typing {
+    padding: .4rem;
+    padding: 4vw;
+    line-height: 1.68;
+    text-align: left;
+  }
+  .typing h1 {
+    font-size: .224rem;
+    margin: .2em 0 1.6em 0;
+  }
+  .typing h2 {
+    font-size: .196rem;
+    margin: 2.8em 0 1em 0;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    font-size: .168rem;
+    margin: 2.8em 0 1.16em 0;
+  }
+  .typing p {
+    margin: 1.4em 0 .8em 0;
+  }
+}
+/*** TAB ***/
+@media (min-width: 769px) and (max-width:992px) {
+  html{
+    font-size: 93.75px;
+  }
+  /*font-size: 15px*/
+  .typing{
+    padding: .6rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 1.8em 0;
+    font-size: .24rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.1em 0;
+    font-size: .21rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .18rem;
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
+}
+/*** PC ***/
+@media (min-width: 993px) and (max-width:1380px) {
+  html {
+    font-size: 100px;
+  }
+  /*font-size: 16px*/
+  .typing {
+    padding: .8rem;
+    line-height: 1.82;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 2.6em 0;
+    font-size: .256rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.14em 0;
+    font-size: .224rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .192rem; 
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
+}
+/*** HD ***/
+@media (min-width: 1381px) {
+  html {
+    font-size: 106.25px;
+  }
+  /*font-size: 17px*/
+  .typing {
+    padding: 1rem;
+    line-height: 1.86;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 3em 0;
+    font-size: .272rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.14em 0;
+    font-size: .238rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .204rem;
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
+}
+/******************************************************************************/
+.typing{
+  color: #1d2935;
+  font-size: .16rem;
+}
+.typing h1,
+.typing h2,
+.typing h3,
+.typing h4,
+.typing h5,
+.typing h6 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.typing h1 {
+  counter-reset:h2;
+}
+.typing h2 {
+  counter-increment:h2;
+  counter-reset:h3;
+}
+.typing h2::before {
+    content: counter(h2) ' ';
+}
+.typing h3 {
+  counter-increment:h3;
+  counter-reset:h4;
+}
+.typing h3::before {
+  content:counter(h2) '.' counter(h3) ' ';
+}
+.typing h4 {
+  counter-increment:h4;
+  counter-reset:h5;
+}
+.typing h4::before {
+  content:counter(h2) '.' counter(h3) '.' counter(h4) ' ';
+}
+.typing h5 {
+  counter-increment:h5;
+  counter-reset:h6;
+}
+.typing h5::before {
+  content:counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) ' ';
+}
+.typing h6 {
+  counter-increment:h6;
+}
+.typing h5::before {
+  content:counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) '.' counter(h6) ' ';
+}
+
+.typing hr {
+  border:none;
+  border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.typing p {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-wrap: break-word;
+}
+.typing p.typing-indent,
+.typing-indent  > p {
+  text-indent: 2em;
+}
+
+.typing ul,
+.typing ol,
+.typing dl,
+.typing table,
+.typing blockquote,
+.typing pre,
+.typing figure,
+.typing .typing-wrap {
+  margin: 0 0 .12rem 0;
+}
+
+.typing ul,
+.typing ol {
+  padding-left: 2em;
+}
+.typing ul {
+  list-style-type: circle;
+}
+.typing li {
+  margin-bottom: .4em;
+}
+.typing li dl {
+  margin-bottom: 0;
+}
+.typing dl dt {
+  font-weight: 600;
+}
+.typing dl dd {
+  margin-left: 0;
+  margin-bottom: 0.1rem; 
+}
+
+
+.typing table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.2);
+  border-bottom: 0;
+  text-align: left;
+}
+.typing table thead tr th,
+.typing table tr td {
+  padding: .05rem .1rem;
+}
+.typing table thead tr th {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.1);
+  font-weight: 400;
+  color: inherit;
+}
+.typing table tr td {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.typing pre code,
+.typing blockquote {
+  color: rgba(18,27,36,.9);
+}
+
+.typing pre {
+  padding: 1em;
+  border: 1px rgba(0,0,0,.2) solid;
+  line-height: 1.6;
+  tab-size: 2;
+}
+.typing pre code{
+  margin: 0;
+  background-color: transparent;
+  font-family: Menlo, Monaco, Consolas, "Courier New";
+  font-size: .8em;
+  color: inherit;
+  white-space: pre-wrap;
+}
+
+.typing blockquote {
+  padding: .2em 0 .3em 1em;
+  border-left: 5px solid rgba(0, 0, 0, .1);
+}
+.typing blockquote *:first-child {
+  margin-top: 0;
+}
+.typing blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.typing cite {
+  font-style: normal;
+  font-size: .8em;
+  color: rgba(18,27,36,.8);
+}
+
+.typing figure {
+  overflow: hidden;
+}
+.typing figure p {
+  margin: .8em 0 .4em 0;
+}
+.typing figure figcaption {
+  margin-bottom: 0.5em; 
+}
+.typing figure pre,
+.typing figure table,
+.typing figure img,
+.typing figure .typing-wrap {
+  margin-bottom: 0; 
+}
+.typing figure img {
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  max-height: inherit;
+  padding: 10px;
+  border:1px #e0e0e0 solid;
+  margin: auto;
+}
+.typing figure small {
+  float: right;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.typing .typing-wrap {
+  border: 1px rgba(0,0,0,.2) solid;
+  overflow: auto;
+  white-space:nowrap;
+  word-break: keep-all;
+}
+.typing .typing-wrap pre,
+.typing .typing-wrap table,
+.typing .typing-wrap table tbody tr:last-child * {
+  border: none;
+  margin-bottom: 0;
+}
+.typing .typing-wrap pre code {
+  margin: 0;
+  white-space: pre;
+}
+
+.typing q {
+  quotes:'「''」''『''』';
+}
+
+.typing a,
+.typing code,
+.typing em,
+.typing strong,
+.typing abbr[title],
+.typing small,
+.typing i,
+.typing data {
+  margin: 0 .032rem;
+}
+
+.typing a {
+  border-bottom: 1px currentcolor solid;
+  background-color: transparent;
+  text-decoration:none;
+  color: rgba(8, 48, 68, 0.8);
+}
+.typing a:hover {
+  border-bottom-color: inherit;
+  outline: 0;
+  color: inherit;
+}
+.typing a * {
+  margin: 0;
+}
+
+.typing code {
+  font-family: inherit;
+  color: rgba(90, 9, 9, 0.8);
+}
+
+.typing em {
+  font-style: normal;
+  -webkit-text-emphasis-position: under;
+  -webkit-text-emphasis-style: filled dot;
+  -webkit-text-emphasis-color: inherit;
+  text-emphasis-position: under;
+  text-emphasis-style: filled dot;
+  text-emphasis-color: inherit;
+}
+/*hack ie > 8*/
+@media screen and (min-width:0\0) {
+  .typing em {font-weight: 600;}
+}
+
+.typing strong {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.typing abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+.typing sub,
+.typing sup,
+.typing small {
+  color: rgba(29,41,53,.8);
+}
+.typing sub,
+.typing sup {
+  margin-left: .032rem;
+  font-size: 12px;
+  line-height: 1;
+}
+.typing small {
+  font-size: .8em;
+}
+
+.typing data {
+-webkit-font-feature-settings: "frac" 1;
+   -moz-font-feature-settings: "frac=1";
+   -moz-font-feature-settings: "frac" 1;
+    -ms-font-feature-settings: "frac" 1;
+        font-feature-settings: "frac" 1;
+}
+
+.typing img {
+  display: inline-block;
+  max-height: .16rem;
+  vertical-align: middle;
+}
+
+.typing header small{
+  display: block;
+  margin-bottom: 3em;
+  text-align: center;
+}
