@@ -46,8 +46,6 @@ html {
   }
   /*font-size: 14px*/
   .typing {
-    padding: .2rem .2rem .4rem .2rem;
-    padding: 4vw 4vw 8vw 4vw;
     line-height: 1.6;
     text-align: left;
   }
@@ -77,8 +75,6 @@ html {
   }
   /*font-size: 14px*/
   .typing {
-    padding: .4rem .4rem .6rem .4rem;
-    padding: 4vw 4vw 8vw 4vw;
     line-height: 1.68;
     text-align: left;
   }
@@ -108,7 +104,6 @@ html {
   }
   /*font-size: 15px*/
   .typing{
-    padding: .6rem .6rem .8rem .6rem;
     line-height: 1.8;
     text-align: justify;
   }
@@ -139,7 +134,6 @@ html {
   }
   /*font-size: 16px*/
   .typing {
-    padding: .8rem .8rem 1rem .8rem;
     line-height: 1.82;
     text-align: justify;
   }
@@ -170,7 +164,6 @@ html {
   }
   /*font-size: 17px*/
   .typing {
-    padding: 1rem 1rem 1.2rem 1rem;
     line-height: 1.86;
     text-align: justify;
   }
