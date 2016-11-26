@@ -382,7 +382,8 @@ html {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.typing figure img ~ small {
+.typing figure img ~ small,
+.typing figure picture ~ small {
   float: none;
   display: block;
   text-align: center;
@@ -497,6 +498,5 @@ html {
 
 .typing header small{
   display: block;
-  margin-bottom: 3em;
-  text-align: center;
+  text-align: right;
 }
