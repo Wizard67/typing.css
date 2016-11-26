@@ -173,12 +173,12 @@ typing.css 会根据<code>媒体查询</code>自动调整合适的 font 属性�
 			<td>1.6</td>
 		</tr>
 		<tr>
-			<td>版面内距</td>
-			<td>4 vw</td>
-			<td>4 vw</td>
-			<td>0.6 rem</td>
-			<td>0.8 rem</td>
-			<td>1 rem</td>
+			<td><del>版面内距</del></td>
+			<td><del>4 vw</del></td>
+			<td><del>4 vw</del></td>
+			<td><del>0.6 rem</del></td>
+			<td><del>0.8 rem</del></td>
+			<td><del>1 rem</del></td>
 		</tr>
 		<tr>
 			<td>对齐方式</td>
@@ -189,6 +189,7 @@ typing.css 会根据<code>媒体查询</code>自动调整合适的 font 属性�
 			<td>两端对齐</td>
 		</tr>
 	</tbody>
-</table>
+</table>  
+*由于耦合的原因，移除了<code>.typing</code>的页面边距。如果需要这个边距效果可以根据表格中的参数自行设定。*
 
 
