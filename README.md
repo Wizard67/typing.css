@@ -190,6 +190,6 @@ typing.css 会根据<code>媒体查询</code>自动调整合适的 font 属性�
 		</tr>
 	</tbody>
 </table>  
-*由于耦合的原因，移除了<code>.typing</code>的页面边距。如果需要这个边距效果可以根据表格中的参数自行设定。*
+<strong>由于耦合的原因，移除了<code>.typing</code>的页面边距。如果需要这个边距效果可以根据表格中的参数自行设定。</strong>
 
 
