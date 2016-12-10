@@ -1,35 +1,46 @@
 @charset "UTF-8";
 /*
-*******************************************
-* written by Wizard67 on 2016-11-25       *
-* https://github.com/Wizard67/typing.css  *
-* updated on 2016-11-16                   *
-*******************************************
+**********************************************
+* typing.css | MIT License                   *
+* https://github.com/Wizard67/typing.css     *
+* Built by Wizard67 on 2016-11-25            *
+* updated on 2016-12-10                      *
+**********************************************
 */
+@font-face {
+  font-family: "Emphasis";
+  src: local("Arial");
+  unicode-range: U+2022, U+25CF; /*[•],[●]*/
+}
+
 @font-face {
   font-family: "Biaodian";
   src:
     local("PingFang SC"),
     local("Hiragino Sans GB"),
-    local("Microsoft YaHei UI Light"),
-    local("Microsoft YaHei Light"),
     local("Microsoft YaHei")
   ;
-  unicode-range: U+201C-201D, U+2018-2019,
-                 U+0020, U+3000,
-                 U+2014,
-                 U+3002, U+FF0C, U+3001,
-                 U+FF1B, U+FF1A, U+FF1F, U+FF01,
-                 U+FF0D, U+FF0F, U+FF3C,
-                 U+007c;
+  unicode-range: U+3002, U+FF0C, U+3001, /*[。],[，],[、]*/
+                 U+FF1A, U+FF1B, /*[：],[；]*/
+                 U+FF01, U+FF1F, /*[!],[?]*/
+                 U+300C, U+300D, U+300E, U+300F /*[「],[」],[『],[』]*/
+                 U+201C, U+2019, U+2018, U+2019 /*[“],[”],[‘],[’]*/
+                 U+FF08, U+FF09, U+2E3A, U+2014 /*[（],[）],[⸺],[—]*/
+                 U+3010, U+3011, U+3016, U+3017, U+3014, U+3015, U+FF3B, U+FF3D, U+FF5B, U+FF5D, /*[【],[】],[〖],[〗],[〔],[〕],[［],[］],[｛],[｝]*/
+                 U+2026, /*[…]*/
+                 U+2013, U+FF5E, U+007E, /*[–],[～],[~]*/
+                 U+00B7, /*[·]*/
+                 U+FE4F, U+300A, U+300B, U+3008, U+3009, /*[﹏],[《],[》],[〈],[〉]*/
+                 U+FF3F, /*[＿]*/
+                 U+002F, U+FF0F; /*[/], [／]*/
 }
 
 html {
-  font-family: "Biaodian",
-               -apple-system , BlinkMacSystemFont,
-               "Helvetica Neue","Segoe UI","Roboto",
+  font-family: "Emphasis","Biaodian",
+               -apple-system, BlinkMacSystemFont,
+               "Helvetica Neue", "Segoe UI", "Roboto",
                "PingFang SC", "Hiragino Sans GB",
-               "Microsoft YaHei UI Light","Microsoft YaHei Light","Microsoft YaHei",
+               "Microsoft YaHei",
                "Noto Sans CJK",
                "WenQuanYi Micro Hei",
                sans-serif;
@@ -38,159 +49,29 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-/******************************************************************************/
-/*** PHONE ***/
-@media (max-width:544px) {
-  html {
-    font-size: 87.5px;
-  }
-  /*font-size: 14px*/
-  .typing {
-    line-height: 1.6;
-    text-align: left;
-  }
-  .typing h1 {
-    margin: .6em 0 1.2em 0;
-    font-size: .224rem;
-  }
-  .typing h2 {
-    margin: 2.6em 0 .85em 0;
-    font-size: .196rem;
-  }
-  .typing h3,
-  .typing h4,
-  .typing h5,
-  .typing h6 {
-    margin: 2em 0 1em 0;
-    font-size: .168rem;
-  }
-  .typing p {
-    margin: 1.2em 0 .8em 0;
-  }
+body {
+  font-size: 16px;
 }
-/** PHONE **/
-@media (min-width: 545px) and (max-width:768px) {
-  html {
-    font-size: 87.5px;
-  }
-  /*font-size: 14px*/
-  .typing {
-    line-height: 1.68;
-    text-align: left;
-  }
-  .typing h1 {
-    font-size: .224rem;
-    margin: .2em 0 1.6em 0;
-  }
-  .typing h2 {
-    font-size: .196rem;
-    margin: 2.8em 0 1em 0;
-  }
-  .typing h3,
-  .typing h4,
-  .typing h5,
-  .typing h6 {
-    font-size: .168rem;
-    margin: 2.8em 0 1.16em 0;
-  }
-  .typing p {
-    margin: 1.4em 0 .8em 0;
-  }
-}
-/*** TAB ***/
-@media (min-width: 769px) and (max-width:992px) {
-  html{
-    font-size: 93.75px;
-  }
-  /*font-size: 15px*/
-  .typing{
-    line-height: 1.8;
-    text-align: justify;
-  }
-  .typing h1 {
-    margin: 0 0 1.8em 0;
-    font-size: .24rem;
-    text-align: center;
-  }
-  .typing h2 {
-    margin: 2.8em 0 1.1em 0;
-    font-size: .21rem;
-  }
-  .typing h3,
-  .typing h4,
-  .typing h5,
-  .typing h6 {
-    margin: 2.8em 0 1.33em 0;
-    font-size: .18rem;
-  }
-  .typing p {
-    margin: 1.6em 0 .8em 0;
-  }
-}
-/*** PC ***/
-@media (min-width: 993px) and (max-width:1380px) {
-  html {
-    font-size: 100px;
-  }
-  /*font-size: 16px*/
-  .typing {
-    line-height: 1.82;
-    text-align: justify;
-  }
-  .typing h1 {
-    margin: 0 0 2.6em 0;
-    font-size: .256rem;
-    text-align: center;
-  }
-  .typing h2 {
-    margin: 2.8em 0 1.14em 0;
-    font-size: .224rem;
-  }
-  .typing h3,
-  .typing h4,
-  .typing h5,
-  .typing h6 {
-    margin: 2.8em 0 1.33em 0;
-    font-size: .192rem; 
-  }
-  .typing p {
-    margin: 1.6em 0 .8em 0;
-  }
-}
-/*** HD ***/
-@media (min-width: 1381px) {
-  html {
-    font-size: 106.25px;
-  }
-  /*font-size: 17px*/
-  .typing {
-    line-height: 1.86;
-    text-align: justify;
-  }
-  .typing h1 {
-    margin: 0 0 3em 0;
-    font-size: .272rem;
-    text-align: center;
-  }
-  .typing h2 {
-    margin: 2.8em 0 1.14em 0;
-    font-size: .238rem;
-  }
-  .typing h3,
-  .typing h4,
-  .typing h5,
-  .typing h6 {
-    margin: 2.8em 0 1.33em 0;
-    font-size: .204rem;
-  }
-  .typing p {
-    margin: 1.6em 0 .8em 0;
-  }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
 /******************************************************************************/
 .typing{
-  color: #1d2935;
+  color: #23303e;
   font-size: .16rem;
 }
 .typing h1,
@@ -321,7 +202,7 @@ html {
 .typing pre {
   padding: 1em;
   border: 1px rgba(0,0,0,.2) solid;
-  line-height: 1.6;
+  line-height: 1.2;
   tab-size: 2;
 }
 .typing pre code{
@@ -372,7 +253,7 @@ html {
   height: auto;
   max-height: inherit;
   padding: 10px;
-  border:1px #e0e0e0 solid;
+  border:1px rgba(0,0,0,.2) solid;
   margin: auto;
 }
 .typing figure small {
@@ -444,11 +325,12 @@ html {
 
 .typing em {
   font-style: normal;
+
   -webkit-text-emphasis-position: under;
-  -webkit-text-emphasis-style: filled dot;
+  -webkit-text-emphasis-style: "\2022";
   -webkit-text-emphasis-color: inherit;
   text-emphasis-position: under;
-  text-emphasis-style: filled dot;
+  text-emphasis-style: "\2022";
   text-emphasis-color: inherit;
 }
 /*hack ie > 8*/
@@ -496,7 +378,159 @@ html {
   vertical-align: middle;
 }
 
-.typing header small{
+.typing header small {
   display: block;
   text-align: right;
+}
+.typing * ~ footer {
+  margin-top: .64rem;
+}
+/******************************************************************************/
+/*** xs ***/
+@media (max-width:544px) {
+  html {
+    font-size: 87.5px;
+  }
+  /*font-size: 14px*/
+  .typing {
+    line-height: 1.8;
+    text-align: left;
+  }
+  .typing h1 {
+    margin: .6em 0 1.2em 0;
+    font-size: .224rem;
+  }
+  .typing h2 {
+    margin: 2.6em 0 .85em 0;
+    font-size: .196rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2em 0 1em 0;
+    font-size: .168rem;
+  }
+  .typing p {
+    margin: 1.2em 0 .8em 0;
+  }
+}
+/*** sm ***/
+@media (min-width: 545px) and (max-width:768px) {
+  html {
+    font-size: 87.5px;
+  }
+  /*font-size: 14px*/
+  .typing {
+    line-height: 1.82;
+    text-align: left;
+  }
+  .typing h1 {
+    font-size: .224rem;
+    margin: .2em 0 1.6em 0;
+  }
+  .typing h2 {
+    font-size: .196rem;
+    margin: 2.8em 0 1em 0;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    font-size: .168rem;
+    margin: 2.8em 0 1.16em 0;
+  }
+  .typing p {
+    margin: 1.4em 0 .8em 0;
+  }
+}
+/*** md ***/
+@media (min-width: 769px) and (max-width:992px) {
+  html {
+    font-size: 93.75px;
+  }
+  /*font-size: 15px*/
+  .typing{
+    line-height: 1.88;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 1.8em 0;
+    font-size: .24rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.1em 0;
+    font-size: .21rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .18rem;
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
+}
+/*** lg ***/
+@media (min-width: 993px) and (max-width:1380px) {
+  html {
+    font-size: 100px;
+  }
+  /*font-size: 16px*/
+  .typing {
+    line-height: 1.82;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 2.2em 0;
+    font-size: .256rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.14em 0;
+    font-size: .224rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .192rem; 
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
+}
+/*** xl ***/
+@media (min-width: 1381px) {
+  html {
+    font-size: 106.25px;
+  }
+  /*font-size: 17px*/
+  .typing {
+    line-height: 1.86;
+    text-align: justify;
+  }
+  .typing h1 {
+    margin: 0 0 2.4em 0;
+    font-size: .272rem;
+    text-align: center;
+  }
+  .typing h2 {
+    margin: 2.8em 0 1.14em 0;
+    font-size: .238rem;
+  }
+  .typing h3,
+  .typing h4,
+  .typing h5,
+  .typing h6 {
+    margin: 2.8em 0 1.33em 0;
+    font-size: .204rem;
+  }
+  .typing p {
+    margin: 1.6em 0 .8em 0;
+  }
 }
