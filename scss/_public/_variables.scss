@@ -1,0 +1,63 @@
+
+$enter_global_font: false !default;
+
+// set value base on media
+@function set_font( $global, $only, $screen ) {
+  $global : map-get( $global, $screen );
+    $only : map-get( $only, $screen );
+
+  @return if( $enter_global_font, $global, $only);
+};
+
+// set bottom padding only
+@mixin margin_btm_only ( $bottom ){
+  margin: 0{
+    @if ( $bottom != 0 ) {
+      bottom: $bottom;
+    }
+  };
+}
+// set top padding only
+@mixin margin_top_only ( $top ){
+  margin: 0{
+    @if ( $top != 0 ) {
+      top: $top;
+    }
+  };
+}
+// set top margin & bottom margin both
+@mixin margin_tb ( $value ) {
+  $top: nth( $value, 1 );
+  $bottom: nth( $value, 2 );
+
+  margin: $top 0 $bottom 0;
+}
+
+// set left margin & right margin both
+@mixin margin_lr ( $left , $right: none ) {
+  @if ( $right == none) {
+    margin: 0 $left;
+  } @else {
+    margin: 0 $right 0 $left;
+  }
+}
+
+/* font */
+@function enter_font( $enter_global_font ){
+  @return if( $enter_global_font, "html", ".typing" );
+}
+
+// media
+$breakpoint: ("lx", "lg", "md", "sm", "xs") !default;
+$media_breakpoint: (lx: none, lg: 1380px, md: 992px, sm: 768px, xs: 544px ) !default;
+
+// font
+$font_family_sans-serif: "Emphasis", "Biaodian", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK", "WenQuanYi Micro Hei", sans-serif !default;
+$font_family_sans:       Georgia, "Times New Roman", Times, serif !default;
+$font_family_monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font_family:                             $font_family_sans-serif !default;
+$font_color:                                              #23303e !default;
+$font_size:   (lx: 17px, lg: 16px, md: 15px, sm: 14px, xs: 14px ) !default;
+$font_weight:                                                 400 !default;
+$font_weight_bold:                                            600 !default;
