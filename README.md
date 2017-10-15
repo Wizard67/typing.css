@@ -1,4 +1,5 @@
-# typing.css
+# typing.css  
+
 typing.css 是一个负责页面文字排版的 CSS 组件，通过对常用 HTML 文本标签进行样式重置以提供更为舒适的排版效果，并且致力于解决以下问题：
   1. 排版标签语义化  
     尽可能地减少 class 和 id 的使用，让页面代码结构清晰整洁。
@@ -7,9 +8,11 @@ typing.css 是一个负责页面文字排版的 CSS 组件，通过对常用 HTM
   3. 响应式排版设计  
     不同分辨率采用不同的排版策略，通过对字体、行间距的调整，以优化不同设备的阅读体验。
 
-##排版效果
+## 排版效果  
+
   [DEMO](https://www.wizard67.com/demo/typing-css/)
-##标签列表
+## 标签列表  
+
 <table>
 	<thead>
 	<tr>
@@ -133,8 +136,10 @@ typing.css 是一个负责页面文字排版的 CSS 组件，通过对常用 HTM
 	  <td>设置两种行内图片和块图片两种效果，具体见详解部分。</td>
 	</tr>
 	</tbody>
-</table>
-###font 与版面
+</table>  
+
+### font 与版面  
+
 typing.css 会根据<code>媒体查询</code>自动调整合适的 font 属性和版面边距。  
 <table>
 	<thead>
