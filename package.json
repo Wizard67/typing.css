@@ -1,0 +1,26 @@
+{
+  "name": "typing.css",
+  "version": "1.0.0",
+  "description": "a component for type",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "node-sass src/typing.scss dist/typing.css --watch",
+    "css:build": "node-sass src/typing.scss dist/typing.css --output-style expanded && node-sass src/typing.scss dist/typing.min.css --output-style compressed --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wizard67/typing.css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Wizard67",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wizard67/typing.css/issues"
+  },
+  "homepage": "https://github.com/Wizard67/typing.css#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
