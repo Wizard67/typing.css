@@ -15,7 +15,3 @@
 .typing {
   color: #5e6d82;
   line-height: 2; }
-  .typing abbr[title] {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-    cursor: help; }
