@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+$namespace: '.typing';
+
+$use-global-font: false;
+
+$font-color-default:  #5e6d82;
+$font-color-light:    #aaaaaa;
+$font-shadow-default: #aaaaaa;
+
+$font-size: 17px;
+$line-height: 2;
+
+$color-selection: #8492A6;
+
+// mixins methods' variable
+$breakpoints: (
+    xs  : 544px,
+    sm  : 768px,
+    md  : 992px,
+    lg  : 1380px,
+    xl  : 1920px
+);
+
+$flexbox: column wrap start center end top hang bottom between around tight auto none full;

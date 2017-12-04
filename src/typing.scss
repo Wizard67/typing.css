@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
-@import "_public/global";
+@import "_config/variables";
+@import "_config/mixins";
 
-@import "_component/typing";
+@import "_component/_font-family";
+@import "_component/_main";
+
+// @import "_public/global";
+
+// @import "_component/typing";
