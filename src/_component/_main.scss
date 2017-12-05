@@ -22,8 +22,13 @@
 
     }
 
-    p {
+    p, ul, ol, dl, table, blockquote, pre {
+        margin: 0 0 2em 0;
+    }
 
+    p {
+        hyphens: auto;
+        word-wrap: break-word;
     }
 
     ul, ol {
@@ -69,11 +74,14 @@
     }
 
     q {
-
+        quotes: '「''」''『''』';
     }
 
     a {
-
+        border-bottom: 1px currentcolor solid;
+        background-color: transparent;
+        text-decoration:none;
+        color: inherit;
     }
 
     code {
@@ -96,7 +104,7 @@
 
     }
 
-    sub, sup {
+    sup {
 
     }
 

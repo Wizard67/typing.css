@@ -8,6 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="../dist/typing.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<style type="text/css">
+		* {
+			outline: 1px red solid;
+		}
 		body{
 			background-color: #666;
 			margin: 0;
@@ -19,48 +22,13 @@
 
 		article{
 			box-sizing: border-box;
+			padding: 80px 80px 100px 80px;
 			width: 900px;
 		    margin: 5px auto;
 		    min-height: 500px;
 			background-color: #fff;
 		}
 
-		/*main page width*/
-		@media (max-width:544px){
-		  body{padding: 0 5px;}
-		  article{padding: 20px 20px 40px 20px;padding: 4vw 4vw 8vw 4vw;}
-		}
-		@media (min-width: 545px) and (max-width:768px){
-		  body{padding: 0 5px;}
-		  article{padding: 60px 60px 80px 60px;padding: 6vw 6vw 10vw 6vw;}
-		}
-		@media (min-width: 769px) and (max-width:992px){
-		  body{padding: 0 5px;}
-		  /*.main{max-width: 9.92rem;}*/
-		  article{padding: 60px 60px 80px 60px;}
-		}
-		@media (min-width: 993px) and (max-width:1380px){
-			/*body{padding: 0 0.5rem;}*/
-		  /*.main{max-width: 10rem;}*/
-		  article{padding: 60px 60px 80px 60px;}
-		}
-		@media (min-width: 1381px){
-		  /*.main{width: 10rem;}*/
-		  article{padding: 80px 80px 100px 80px;}
-		}
-
-		*::-webkit-scrollbar {-webkit-appearance: none;width: 8px;height: 8px;}
-		*::-webkit-scrollbar-thumb {border: 3px solid transparent;background-color: rgba(0, 0, 0, .2);}
-		*::-webkit-scrollbar-thumb:hover{background-color: rgba(0, 0, 0, .3);}
-		*::-webkit-scrollbar-track {background-color: transparent;}
-
-		@-ms-viewport{width:device-width;}
-		@-o-viewport{width:device-width;}
-		@viewport{width:device-width;}
-
-		::selection {
-    		background-color: #fff159;
-    	}
 	</style>
 </head>
 
@@ -70,7 +38,7 @@
             <article class="typing">
 
 <p>
-    繁体中文标点多位于字面正中，部分标号在直、横排中使用不同的方向以准确地标注文字；简体中文标点多位于被标注注文字的末端、字面始端，部分标号在直、横排中除了使用不同的方向外，亦有需要因文字书写方向替换符号形式的需求，如引号（横排使用弯引号，直排使用直角引号）。
+    繁体中文<q>标点</q>多位于字面正中，部分<a href="#">标号</a>在直、<del>横排</del>中使用<code>style</code>不同的<em>方向</em>以<strong>准确</strong>地标注文字；<abbr title="简体中文">简中</abbr>标点多位于被标注注文字的末端、字面<sup><a href="#">[1]</a></sup>始端，部分标号在直、横排中除了使用不同的方向外，亦有需要因文字书写方向替换符号形式的需求，如引号（横排使用弯引号，直排使用直角引号）。
 </p>
 <p>
     点号，包括：顿号、逗号、分号、冒号、句号、问号、惊叹号等，占一个汉字的大小，直、横排方向一致。繁体中文排版位于字面正中；简体中文排版则位于文字末端、字面始端 偏顶端或底端一侧(横排时位字面左下角，直排时位字面右上角)。  

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Emphasis";
   src: local("Arial");
@@ -15,3 +16,15 @@
 .typing {
   color: #5e6d82;
   line-height: 2; }
+  .typing p, .typing ul, .typing ol, .typing dl, .typing table, .typing blockquote, .typing pre {
+    margin: 0 0 2em 0; }
+  .typing p {
+    hyphens: auto;
+    word-wrap: break-word; }
+  .typing q {
+    quotes: "「" "」" "『" "』"; }
+  .typing a {
+    border-bottom: 1px currentcolor solid;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit; }
