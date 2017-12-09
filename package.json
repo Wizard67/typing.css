@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "css:watch": "node-sass src/typing.scss dist/typing.css --watch",
-    "css:build": "node-sass src/typing.scss dist/typing.css --output-style expanded && node-sass src/typing.scss dist/typing.min.css --output-style compressed --source-map true"
+    "css:build": "node-sass src/typing.scss dist/typing.css --output-style expanded && node-sass src/typing.scss dist/typing.min.css --output-style compressed --source-map true",
+    "sync": "browser-sync start --server --files src"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/Wizard67/typing.css#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "node-sass": "^4.7.2"
   }
 }
