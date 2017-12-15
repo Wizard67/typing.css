@@ -5,26 +5,99 @@
   unicode-range: U+2022, U+25CF; }
 
 @font-face {
-  font-family: "Biaodian";
+  font-family: "Punctuation";
   src: local("PingFang SC"), local("Hiragino Sans GB"), local("Microsoft YaHei UI Light"), local("Microsoft YaHei Light"), local("Microsoft YaHei");
   unicode-range: U+3002, U+FF0C, U+3001, U+FF1A, U+FF1B, U+FF01, U+FF1F, U+300C, U+300D, U+300E, U+300F U+201C, U+2019, U+2018, U+2019 U+FF08, U+FF09, U+2E3A, U+2014 U+3010, U+3011, U+3016, U+3017, U+3014, U+3015, U+FF3B, U+FF3D, U+FF5B, U+FF5D, U+2026, U+2013, U+FF5E, U+007E, U+00B7, U+FE4F, U+300A, U+300B, U+3008, U+3009, U+FF3F, U+002F, U+FF0F; }
 
 .typing {
-  font-family: "Emphasis","Biaodian", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI Light", "Microsoft YaHei Light"," Microsoft YaHei", "Microsoft YaHei", "Noto Sans CJK", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Emphasis","Punctuation", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI Light", "Microsoft YaHei Light"," Microsoft YaHei", "Microsoft YaHei", "Noto Sans CJK", "WenQuanYi Micro Hei", sans-serif;
   font-size: 17px; }
 
 .typing {
   color: #5e6d82;
   line-height: 2; }
+  .typing hr {
+    border: none; }
   .typing p, .typing ul, .typing ol, .typing dl, .typing table, .typing blockquote, .typing pre {
     margin: 0 0 2em 0; }
   .typing p {
     hyphens: auto;
     word-wrap: break-word; }
+  .typing table {
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: #aaaaaa 1px solid;
+    border-bottom: 0;
+    text-align: left; }
+    .typing table thead tr th {
+      padding: 0 .5em;
+      font-weight: 600;
+      color: inherit;
+      border-bottom: #aaaaaa 1px solid; }
+    .typing table tr td {
+      padding: 0 .5em;
+      border-bottom: #aaaaaa 1px solid; }
   .typing q {
     quotes: "「" "」" "『" "』"; }
+  .typing a, .typing code, .typing em, .typing strong, .typing del, .typing abbr[title], .typing sup, .typing small, .typing data {
+    margin: 0 .125em; }
+    .typing a a, .typing code a, .typing em a, .typing strong a, .typing del a, .typing abbr[title] a, .typing sup a, .typing small a, .typing data a {
+      margin: 0; }
   .typing a {
     border-bottom: 1px currentcolor solid;
     background-color: transparent;
     text-decoration: none;
     color: inherit; }
+  .typing code {
+    margin: 0 .25em;
+    padding: .125em .25em;
+    border: 1px solid currentColor;
+    border-radius: .25em;
+    line-height: 1em;
+    font-size: .8em;
+    font-family: inherit;
+    color: inherit; }
+  .typing em {
+    font-family: "Emphasis";
+    font-style: normal;
+    -webkit-text-emphasis-position: under;
+    -webkit-text-emphasis-style: "\2022";
+    -webkit-text-emphasis-color: #aaaaaa;
+    text-emphasis-position: under;
+    text-emphasis-style: "\2022";
+    text-emphasis-color: #aaaaaa;
+    /*hack ie > 8*/ }
+    @media screen and (min-width: 0\0) {
+      .typing em {
+        font-weight: 600; } }
+  .typing strong {
+    font-style: normal;
+    font-weight: 600; }
+  .typing del::before {
+    content: '\2002'; }
+  .typing del::after {
+    content: '\2002'; }
+  .typing abbr[title] {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    cursor: help; }
+  .typing sup {
+    margin-right: .125em;
+    font-size: .8em;
+    line-height: 1;
+    color: #aaaaaa; }
+    .typing sup::before {
+      content: '['; }
+    .typing sup::after {
+      content: ']'; }
+  .typing small {
+    font-size: .8em;
+    color: inherit; }
+  .typing data {
+    -webkit-font-feature-settings: "frac" 1;
+    font-feature-settings: "frac" 1; }
+  .typing img {
+    display: block;
+    max-height: 100%; }

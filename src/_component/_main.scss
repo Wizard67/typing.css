@@ -32,7 +32,7 @@
     }
 
     ul, ol {
-    
+
         li {
 
         }
@@ -49,12 +49,24 @@
     }
 
     table {
-        thead tr th {
+        table-layout: auto;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border: $font-color-light 1px solid;
+        border-bottom: 0;
+        text-align: left;
 
+        thead tr th {
+            padding: 0 .5em;
+            font-weight: 600;
+            color: inherit;
+            border-bottom: $font-color-light 1px solid;
         }
 
         tr td {
-
+            padding: 0 .5em;
+            border-bottom: $font-color-light 1px solid;
         }
 
         tfoot tr td {

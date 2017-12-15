@@ -2,51 +2,231 @@
 <html lang="en">
 
 <head>
-    <title>test demo</title>
+	<title>test demo</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="../dist/typing.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<style type="text/css">
 		* {
-			outline: 1px red solid;
+			/* outline: 1px red solid; */
 		}
-		body{
+
+		body {
 			background-color: #666;
 			margin: 0;
 		}
+
 		html,
-		body{
-		  min-height: 100%;
+		body {
+			min-height: 100%;
 		}
 
-		article{
+		article {
 			box-sizing: border-box;
 			padding: 80px 80px 100px 80px;
 			width: 900px;
-		    margin: 5px auto;
-		    min-height: 500px;
+			margin: 5px auto;
+			min-height: 500px;
 			background-color: #fff;
 		}
-
 	</style>
 </head>
 
 <body class="layouting">
-    <div class="container-column">
-        <div class="column-main">
-            <article class="typing">
+	<div class="container-column">
+		<div class="column-main">
+			<article class="typing">
 
-<p>
-    繁体中文<q>标点</q>多位于字面正中，部分<a href="#">标号</a>在直、<del>横排</del>中使用<code>style</code>不同的<em>方向</em>以<strong>准确</strong>地标注文字；<abbr title="简体中文">简中</abbr>标点多位于被标注注文字的末端、字面<sup><a href="#">[1]</a></sup>始端，部分标号在直、横排中除了使用不同的方向外，亦有需要因文字书写方向替换符号形式的需求，如引号（横排使用弯引号，直排使用直角引号）。
-</p>
-<p>
-    点号，包括：顿号、逗号、分号、冒号、句号、问号、惊叹号等，占一个汉字的大小，直、横排方向一致。繁体中文排版位于字面正中；简体中文排版则位于文字末端、字面始端 偏顶端或底端一侧(横排时位字面左下角，直排时位字面右上角)。  
-</p>
+				<p>
+					繁体中文
+					<q>标点</q>多位于字面正中，部分
+					<a href="#">标号</a>
+					<a href="#">
+						<del>标号</del>
+					</a>在直、
+					<del>横排</del>中使用
+					<code>style</code>不同的
+					<em>方向</em>以
+					<strong>准确</strong>地标注
+					<em>word</em>；
+					<abbr title="简体中文">简中</abbr>标点多位于被标注注文字的末端、字面
+					<sup>
+						<a href="#">1</a>
+					</sup>始端，部分标号在直、横排中除了使用不同的方向外，亦有需要因文字书写方向替换符号形式的需求，如引号（横排使用弯引号，直排使用直角引号）。
+				</p>
+				<hr>
 
-            </article>
-        </div>
-    </div>
+				<table>
+					<thead>
+						<tr>
+							<th>类型</th>
+							<th>标签</th>
+							<th>样式修改</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>全局</td>
+							<td>
+								<code>.typing</code>
+							</td>
+							<td>默认字体颜色:
+								<code>#1d2935</code>，字号和行高响应分辨率。
+							</td>
+						</tr>
+						<tr>
+							<td>标题</td>
+							<td>
+								<code>&lt;h1&gt;</code>~
+								<code>&lt;h6&gt;</code>
+							</td>
+							<td>使样式符合语义，
+								<code>&lt;h3&gt;</code>~
+								<code>&lt;h6&gt;</code>设置统一字号。自动编号。
+							</td>
+						</tr>
+						<tr>
+							<td>分割线</td>
+							<td>
+								<code>&lt;hr&gt;</code>
+							</td>
+							<td>修改默认颜色，设置外边距。</td>
+						</tr>
+						<tr>
+							<td>段落</td>
+							<td>
+								<code>&lt;p&gt;</code>
+							</td>
+							<td>默认无缩进，如需缩进可在其父级容器上添加
+								<code>class="typing-indent"</code>。
+							</td>
+						</tr>
+						<tr>
+							<td>列表</td>
+							<td>
+								<code>&lt;ul&gt;</code>|
+								<code>&lt;ol&gt;</code>|
+								<code>&lt;dl&gt;</code>
+							</td>
+							<td>修改无序和有序列表的列表符号，统一排版风格；增强定义列表联系。</td>
+						</tr>
+						<tr>
+							<td>表格</td>
+							<td>
+								<code>&lt;table&gt;</code>
+							</td>
+							<td>重置默认样式。表格外层容器添加
+								<code>class="typing-wrap"</code>，可响应式支持。
+							</td>
+						</tr>
+						<tr>
+							<td>代码块</td>
+							<td>
+								<code>&lt;pre&gt;</code>
+							</td>
+							<td>设置等宽字体。外层容器可添加
+								<code>class="typing-wrap"。</code>
+							</td>
+						</tr>
+						<tr>
+							<td>引用块</td>
+							<td>
+								<code>&lt;blockquote&gt;</code>
+							</td>
+							<td>修改样式。可包裹其他样式列表内的标签。</td>
+						</tr>
+						<tr>
+							<td>内容块</td>
+							<td>
+								<code>&lt;figure&gt;</code>
+							</td>
+							<td>添加外边距，可包裹其他样式列表内的标签。</td>
+						</tr>
+						<tr>
+							<td>参考</td>
+							<td>
+								<code>&lt;cite&gt;</code>
+							</td>
+							<td>可设置参考文献的引用列表，正体，小号字。</td>
+						</tr>
+						<tr>
+							<td>短引用</td>
+							<td>
+								<code>&lt;q&gt;</code>
+							</td>
+							<td>引用符号修改为直角引号。</td>
+						</tr>
+						<tr>
+							<td>链接</td>
+							<td>
+								<code>&lt;a&gt;</code>
+							</td>
+							<td>使用
+								<code>border-bottom</code>显示下划线，修改默认颜色，
+								<code>:hover</code>颜色继承父级。
+							</td>
+						</tr>
+						<tr>
+							<td>代码</td>
+							<td>
+								<code>&lt;code&gt;</code>
+							</td>
+							<td>继承全局字体，颜色设置为:
+								<code>rgba(90, 9, 9, 0.8)</code>。
+							</td>
+						</tr>
+						<tr>
+							<td>着重</td>
+							<td>
+								<code>&lt;em&gt;</code>
+							</td>
+							<td>正体，强调语气。在
+								<code>Webkit内核</code>中添加着重号，
+								<code>IE浏览器</code>内渲染为粗体。
+							</td>
+						</tr>
+						<tr>
+							<td>强调</td>
+							<td>
+								<code>&lt;strong&gt;</code>
+							</td>
+							<td>正体、粗体，强调程度最高。</td>
+						</tr>
+						<tr>
+							<td>删除</td>
+							<td>
+								<code>&lt;del&gt;</code>
+							</td>
+							<td>默认删除线样式。</td>
+						</tr>
+						<tr>
+							<td>缩写</td>
+							<td>
+								<code>&lt;abbr&gt;</code>
+							</td>
+							<td>修改鼠标手势为
+								<code>help</code>，设置底部虚线。
+							</td>
+						</tr>
+						<tr>
+							<td>上下标</td>
+							<td>
+								<code>&lt;sup&gt;</code>|
+								<code>&lt;sub&gt;</code>
+							</td>
+							<td>固定字号为
+								<code>12px</code>，行高为
+								<code>1</code>。
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</article>
+		</div>
+	</div>
 </body>
 
 </html>
