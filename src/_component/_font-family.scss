@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "Biaodian";
+    font-family: "Punctuation";
     src:
         local("PingFang SC"),
         local("Hiragino Sans GB"),
@@ -32,7 +32,7 @@
 
 @include _font-family($use-global-font) {
 
-    font-family: "Emphasis","Biaodian",
+    font-family: "Emphasis","Punctuation",
                  -apple-system, BlinkMacSystemFont,
                  "Helvetica Neue", "Segoe UI", "Roboto",
                  "PingFang SC", "Hiragino Sans GB",
