@@ -3,7 +3,7 @@
     line-height: $line-height;
 
     h1, h2, h3, h4, h5, h6 {
-
+        
     }
     h1 {
 
@@ -19,7 +19,7 @@
     }
 
     hr {
-
+        border: none;
     }
 
     p, ul, ol, dl, table, blockquote, pre {
@@ -77,47 +77,103 @@
         quotes: '「''」''『''』';
     }
 
+    a, code, em, strong, del, abbr[title], sup, small, data {
+        margin: 0 .125em;
+
+        a {
+            margin: 0;
+        }
+    }
+
     a {
         border-bottom: 1px currentcolor solid;
         background-color: transparent;
-        text-decoration:none;
+        text-decoration: none;
         color: inherit;
+
+        &:hover {
+
+        }
     }
 
     code {
-
+        margin: 0 .25em;
+        padding: .125em .25em;
+        border: 1px solid currentColor;
+        border-radius: .25em;
+        line-height: 1em;
+        font-size: .8em;
+        font-family: inherit;
+        color: inherit;
     }
 
     em {
-        
+        font-family: "Emphasis";
+        font-style: normal;
+
+        -webkit-text-emphasis-position: under;
+           -webkit-text-emphasis-style: "\2022";
+           -webkit-text-emphasis-color: $font-color-light;
+                text-emphasis-position: under;
+                   text-emphasis-style: "\2022";
+                   text-emphasis-color: $font-color-light;
+
+        /*hack ie > 8*/
+        @at-root {
+            @media screen and (min-width:0\0) {
+                #{$namespace} em {font-weight: 600;}
+            }
+        }
     }
 
     strong {
-
+        font-style: normal;
+        font-weight: 600;
     }
 
     del {
 
+        &::before {
+            content: '\2002';
+        }
+        &::after {
+            content: '\2002';
+        }
     }
 
     abbr[title] {
-
+        border-bottom: 1px dotted;
+        text-decoration: none;
+        cursor: help;
     }
 
     sup {
+        margin-right: .125em;
+        font-size: .8em;
+        line-height: 1;
+        color: $font-color-light;
 
+        &::before {
+            content: '[';
+        }
+        &::after {
+            content: ']';
+        }
     }
 
     small {
-
+        font-size: .8em;
+        color: inherit;
     }
 
     data {
-
+        -webkit-font-feature-settings: "frac" 1;
+                font-feature-settings: "frac" 1;
     }
 
     img {
-
+        display: block;
+        max-height: 100%;
     }
 
 }
