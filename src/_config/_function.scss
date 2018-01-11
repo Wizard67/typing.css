@@ -1,0 +1,4 @@
+// auto set map value
+@function _setValue( $map ) {
+    @return map-get($map, $__i);
+}
