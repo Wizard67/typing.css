@@ -1,12 +1,8 @@
 // set media query
-@mixin _media( $size ) {
-
-    $vaule : map-get($breakpoints, $size);
-
-    @media only screen and (max-width: $vaule){
+@mixin _media( $value ) {
+    @media only screen and (max-width: $value){
         @content;
     }
-
 }
 
 // use flex-box
@@ -38,6 +34,7 @@
 
 // set font-family scoped
 @mixin _font-family( $boolean ){
+
     $scope : if($boolean, 'html', $namespace);
 
     #{$scope} {
@@ -46,16 +43,17 @@
 
 }
 
+// iterate to set media query
+@mixin _set_media() {
+    
+    @each $point in $breakpoints {
 
-@mixin _set_media( $breakpoint ) {
+        $__i: nth($point, 1) !global;
+        $value: nth($point, 2);
 
-  @each $item in $breakpoint {
-    $vaule : map-get($media_breakpoint, $item);
-    $__index: $item !global;
-    @if ($vaule != none ) {
-      @media only screen and (max-width: $vaule){
-        @content;
-      }
+        @include _media( $value ) {
+            @content;
+        }
+
     }
-  }
 }
