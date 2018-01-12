@@ -2,11 +2,11 @@
 $use-global-font: false !default;
 
 $breakpoints: (
-    xl : 1920px,
-    lg : 1380px,
-    md : 992px,
-    sm : 768px,
-    xs : 544px,
+    xl: 1920px,
+    lg: 1380px,
+    md: 992px,
+    sm: 768px,
+    xs: 544px,
 ) !default;
 
 $flexbox: column wrap start center end top middle bottom between around tight auto none full;
@@ -19,104 +19,150 @@ $color-sub:   #960303 !default;
 $color-light: #d6d6d6 !default;
 $color-dark:  #757575 !default;
 
-$font-size: (
-    xl : 16px,
-    lg : 16px,
-    md : 14px,
-    sm : 14px,
-    xs : 12px,
+$font_family_sans: Georgia, "Times New Roman", Times, serif !default;
+$font_family_monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$fontSize: (
+    xl: 16px,
+    lg: 16px,
+    md: 14px,
+    sm: 14px,
+    xs: 12px,
 ) !default;
+$fontSize-helper: .8em !default;
 $fontWeight:       400 !default;
 $fontWeight-focus: 600 !default;
 
-$line-height: 2;
-
-// media
-$breakpoint: ("lx", "lg", "md", "sm", "xs") !default;
-$media_breakpoint: (lx: none, lg: 1380px, md: 992px, sm: 768px, xs: 544px ) !default;
-
-// font
-$font_family_sans:       Georgia, "Times New Roman", Times, serif !default;
-$font_family_monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-
-
-
-
-// margin
-$_inline_margin: if( $use-global-font,
-  ( lx: 1.4rem, lg: 1.4rem, md: 1.4rem, sm: 1.2rem, xs: 1.2rem ),
-  ( lx: 23.8px, lg: 22.4px, md: 21px, sm: 16.8px, xs: 16.8px )
+$lineHeight: (
+    xl: 2.2,
+    lg: 2,
+    md: 2,
+    sm: 1.96,
+    xs: 1.8,
 ) !default;
 
-// color
-$_color_light: #d6d6d6 !default;
-
-// font
-$_font_size_small: .8em !default;
-$_font_color_light: #d6d6d6 !default;
-$_line_height:  (lx: 2.2, lg: 2, md: 2, sm: 1.96, xs: 1.8 ) !default;
-
-// text
-$_text_algin: (lx: justify, lg: justify, md: left, sm: left, xs: left ) !default;
-
-// line
-$_line_style: 1px solid $_color_light !default;
-
-// h
-$_h_font_lineh:  1.4 !default;
-
-$_h1_font_size: if($use-global-font,
-  ( lx: 1.6rem, lg: 1.6rem, md: 1.5rem, sm: 1.4rem, xs: 1.3rem ),
-  ( lx: 27.2px, lg: 25.6px, md: 22.5px, sm: 19.6px, xs: 18.2px )
-) !default;
-$_h2_font_size: if($use-global-font,
-  ( lx: 1.4rem, lg: 1.4rem, md: 1.3rem, sm: 1.2rem, xs: 1.14rem ),
-  ( lx: 23.8px, lg: 22.4px, md: 19.5px, sm: 16.8px, xs: 15.96px )
-) !default;
-$_h3_font_size: if($use-global-font,
-  ( lx: 1.2rem, lg: 1.2rem, md: 1.2rem, sm: 1.2rem, xs: 1.1rem ),
-  ( lx: 20.4px, lg: 19.2px, md: 18px, sm: 16.8px, xs: 15.4px )
-) !default;
-$_ho_font_size: if($use-global-font,
-  ( lx: 1rem, lg: 1rem, md: 1rem, sm: 1rem, xs: 1rem ),
-  ( lx: 17px, lg: 16px, md: 15px, sm: 14px, xs: 14px )
+$textAlign: (
+    xl: justify,
+    lg: justify,
+    md: left,
+    sm: left,
+    xs: left,
 ) !default;
 
-$_h1_margin: (lx: 3em, lg: 2.2em, md: 2em, sm: 1.8em, xs: 1.2em ) !default;
-$_h2_margin: (lx: (3.8em 1.4em), lg: (2.8em 1.4em), md: (2.6em 1.3em), sm: (2.2em 1.2em), xs: (2.2em 1.2em) ) !default;
-$_h3_margin: (lx: ( 2em .8em), lg: ( 1.8em .6em), md: (1.8em .6em), sm: (1.6em .6em), xs: ( 1.4em .6em) ) !default;
-$_ho_margin: (lx: ( 1.6em .6em), lg: ( 1.2em .6em), md: ( 1.2em .6em), sm: (1.2em .8em), xs: ( 1.2em .6em) ) !default;
 
-$_h1_text_align: (lx: center, lg: center, md: center, sm: left, xs: left ) !default;
+// inline element
+$_inlineElement-margin: 0 3.2px !default;
 
-// list
-$_list_style_padding: 2em !default;
-$_list_style_type: circle !default;
-$_list_line_margin: (lx: .8em, lg: .6em, md: .6em, sm: .7em, xs: .7em ) !default;
-$_list_line_height: (lx: 1.94, lg: 1.94, md: 1.94, sm: 1.9, xs: 1.9 ) !default;
+$_q-style: '「''」''『''』' !default;
 
-// table
-$_table_tr_padding: 5px 10px !default;
+$_a-style: 1px currentcolor solid !default;
 
-// pre
-$_pre_padding: 1em !default;
-$_pre_line_height: 1.2 !default;
-$_pre_font_size: .8em !default;
+$_code-fontFamily: inherit !default;
+
+$_sub-margin: 0 2px !default;
+
+
+// block element
+$_blockElement-margin: (
+    xl: 0 0 1.4rem 0,
+    lg: 0 0 1.4rem 0,
+    md: 0 0 1.4rem 0,
+    sm: 0 0 1.2rem 0,
+    xs: 0 0 1.2rem 0,
+) !default;
+
+$_h-lineHeight:  1.4 !default;
+
+$_h1-textAlign: (
+    xl: center,
+    lg: center,
+    md: center,
+    sm: left,
+    xs: left,
+) !default;
+
+$_h1-fontSize: (
+    xl: 1.6rem,
+    lg: 1.6rem,
+    md: 1.5rem,
+    sm: 1.4rem,
+    xs: 1.3rem 
+) !default;
+$_h2-fontSize: (
+    xl: 1.4rem,
+    lg: 1.4rem,
+    md: 1.3rem,
+    sm: 1.2rem,
+    xs: 1.14rem,
+) !default;
+$_h3-fontSize: (
+    xl: 1.2rem,
+    lg: 1.2rem,
+    md: 1.2rem,
+    sm: 1.2rem,
+    xs: 1.1rem,
+) !default;
+$_ho-fontSize: (
+    xl: 1rem,
+    lg: 1rem,
+    md: 1rem,
+    sm: 1rem,
+    xs: 1rem,
+) !default;
+
+$_h1-margin: (
+    xl: 0 0 3em 0,
+    lg: 0 0 2.2em 0,
+    md: 0 0 2em 0,
+    sm: 0 0 1.8em 0,
+    xs: 0 0 1.2em 0,
+) !default;
+$_h2-margin: (
+    xl: 3.8em 0 1.4em 0,
+    lg: 2.8em 0 1.4em 0,
+    md: 2.6em 0 1.3em 0,
+    sm: 2.2em 0 1.2em 0,
+    xs: 2.2em 0 1.2em 0,
+) !default;
+$_h3-margin: (
+    xl: 2em 0 .8em 0,
+    lg: 1.8em 0 .6em 0,
+    md: 1.8em 0 .6em 0,
+    sm: 1.6em 0 .6em 0,
+    xs: 1.4em 0 .6em 0,
+) !default;
+$_ho-margin: (
+    xl: 1.6em 0 .6em 0,
+    lg: 1.2em 0 .6em 0,
+    md: 1.2em 0 .6em 0,
+    sm: 1.2em 0 .8em 0,
+    xs: 1.2em 0 .6em 0,
+) !default;
+
+$_list-padding: 0 0 0 2em !default;
+$_list-style: circle !default;
+$_li-margin: (
+    xl: 0 0 .8em 0,
+    lg: 0 0 .6em 0,
+    md: 0 0 .6em 0,
+    sm: 0 0 .7em 0, 
+    xs: 0 0 .7em 0,
+) !default;
+$_li-lineHeight: (
+    lx: 1.94,
+    lg: 1.94,
+    md: 1.94,
+    sm: 1.9,
+    xs: 1.9,
+) !default;
+
+$_table-padding: 5px 10px !default;
+
+$_pre-padding: 1em !default;
+$_pre-lineHeight: 1.2 !default;
+$_pre-fontSize: 1em !default;
 $_pre_color: $color-dark !default;
-$_pre_tab_size: 2 !default;
+$_pre_tabSize: 2 !default;
 
-// blockquote
-$_blockquote_padding: 0 0 0 .5em !default;
-$_blockquote_style_left: .4em solid $_color_light !default;
-
-// q
-$_q_style: '「''」''『''』' !default;
-
-// a
-$_a_style: 1px currentcolor solid !default;
-
-// code
-$_code-color: #960303 !default;
-
-// img
-$_img_inline_height: 16px !default;
+$_blockquote-padding: 0 0 0 .5em !default;
+$_blockquote-style: .4em solid $color-light !default;
