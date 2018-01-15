@@ -41,14 +41,6 @@ $lineHeight: (
     xs: 1.8,
 ) !default;
 
-$textAlign: (
-    xl: justify,
-    lg: justify,
-    md: left,
-    sm: left,
-    xs: left,
-) !default;
-
 
 // inline element
 $_inlineElement-margin: 0 !default;
@@ -69,6 +61,14 @@ $_blockElement-margin: (
     md: 0 0 1.4rem 0,
     sm: 0 0 1.2rem 0,
     xs: 0 0 1.2rem 0,
+) !default;
+
+$_blockElement-textAlign: (
+    xl: justify,
+    lg: justify,
+    md: justify,
+    sm: justify,
+    xs: justify,
 ) !default;
 
 $_h-lineHeight:  1.4 !default;

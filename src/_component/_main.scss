@@ -3,7 +3,6 @@
     @include _set_media() {
         font-size: _setValue($fontSize);
         line-height: _setValue($lineHeight);
-        text-align: _setValue($textAlign);
     }
 
     // inline element
@@ -129,6 +128,11 @@
             margin: _setValue($_blockElement-margin);
         }
     }
+    %blockElement-textAlign {
+        @include _set_media() {
+            text-align: _setValue($_blockElement-textAlign);
+        }
+    }
 
     hr {
         @extend %blockElement-margin;
@@ -136,12 +140,12 @@
     }
 
     p {
-        // @extend %blockElement-margin;
+        @extend %blockElement-textAlign;
         -webkit-hyphens: auto;
             -ms-hyphens: auto;
                 hyphens: auto;
         word-wrap: break-word;
-
+        
         @include _set_media() {
             margin: _setValue($_p-margin);
             line-height: _setValue($_p-lineHeight);
