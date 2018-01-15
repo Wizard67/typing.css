@@ -27,7 +27,7 @@ $fontSize: (
     lg: 16px,
     md: 14px,
     sm: 14px,
-    xs: 12px,
+    xs: 14px,
 ) !default;
 $fontSize-helper: .8em !default;
 $fontWeight:       400 !default;
@@ -137,6 +137,21 @@ $_ho-margin: (
     md: 1.2em 0 .6em 0,
     sm: 1.2em 0 .8em 0,
     xs: 1.2em 0 .6em 0,
+) !default;
+
+$_p-margin: (
+    xl: 0 0 1.8em 0,
+    lg: 0 0 1.98em 0,
+    md: 0 0 1.82em 0,
+    sm: 0 0 1.6em 0,
+    xs: 0 0 1.8em 0,
+) !default;
+$_p-lineHeight: (
+    xl: 2,
+    lg: 2.08,
+    md: 2.12,
+    sm: 2.18,
+    xs: 2.2,
 ) !default;
 
 $_list-padding: 0 0 0 2em !default;

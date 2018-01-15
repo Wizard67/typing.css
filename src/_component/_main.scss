@@ -146,11 +146,16 @@
     }
 
     p {
-        @extend %blockElement-margin;
+        // @extend %blockElement-margin;
         -webkit-hyphens: auto;
             -ms-hyphens: auto;
                 hyphens: auto;
         word-wrap: break-word;
+
+        @include _set_media() {
+            margin: _setValue($_p-margin);
+            line-height: _setValue($_p-lineHeight);
+        }
     }
 
     ul, ol {
@@ -204,7 +209,7 @@
         }
     }
 
-    .typing-wrap {
+    #{$namespace}-autoWrap {
         @extend %blockElement-margin;
         border: 1px solid $color-light;
         overflow: auto;
@@ -241,7 +246,7 @@
             white-space: pre-wrap;
         }
     }
-
+    
     blockquote {
         @extend %blockElement-margin;
         padding: $_blockquote-padding;
