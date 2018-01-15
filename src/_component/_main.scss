@@ -77,7 +77,7 @@
     }
 
     sub, sup {
-        margin-left: $_sub-margin;
+        margin: $_sub-margin;
         color: $color-dark;
         font-size: $fontSize-helper;
         line-height: 1;
