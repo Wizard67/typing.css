@@ -217,25 +217,26 @@
 
         dd {
             @include _set_media() {
-                margin: _setValue($_dd-margin);
+                margin: _setValue($_li-margin);
             }
         }
     }
 
     table {
         @extend %blockElement-margin;
+        max-width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        width: 100%;
         border: 1px solid $color-light;
         border-bottom: 0;
+
         text-align: left;
 
         thead tr th {
             padding: $_table-padding;
+            color: inherit;
             background-color: $color-light;
             font-weight: $fontWeight;
-            color: inherit;
         }
 
         tr td {
@@ -244,33 +245,13 @@
         }
     }
 
-    #{$namespace}-autoWrap {
-        @extend %blockElement-margin;
-        border: 1px solid $color-light;
-        overflow: auto;
-        white-space:nowrap;
-        word-break: keep-all;
-    
-        pre, table, table tbody tr:last-child *{
-            border: none;
-            margin: 0;
-            margin-bottom: 0;
-        }
-    
-        pre code {
-            white-space: pre;
-        }
-    }
-
     pre {
         @extend %blockElement-margin;
+        tab-size: $_pre_tabSize;
         padding: $_pre-padding;
         border: 1px solid $color-light;
 
         line-height: $_pre_lineHeight;
-        -moz-tab-size: $_pre_tabSize;
-        -o-tab-size: $_pre_tabSize;
-            tab-size: $_pre_tabSize;
 
         code {
             margin: 0;
@@ -279,6 +260,25 @@
             font-family: $font-family-monospace;
             font-size: $_pre_fontSize;
             white-space: pre-wrap;
+        }
+    }
+
+    #{$namespace}-autoWrap {
+        @extend %blockElement-margin;
+        display: inline-block;
+        max-width: 100%;
+        border: 1px solid $color-light;
+        overflow: auto;
+        white-space: nowrap;
+        word-break: keep-all;
+    
+        pre, table, table tr:last-child td{
+            margin: 0;
+            border: none;
+        }
+
+        pre code {
+            white-space: pre;
         }
     }
     
