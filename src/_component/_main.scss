@@ -17,6 +17,7 @@
 
     a {
         @extend %inlineElement-margin;
+        padding-bottom: $_a-padding;
         border-bottom: $_a-style;
         color: inherit;
         background-color: transparent;
