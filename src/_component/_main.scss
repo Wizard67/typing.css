@@ -158,8 +158,8 @@
         @extend %blockElement-margin;
         padding: $_list-padding;
 
-        @include _set_media() {
-            li {
+        li {
+            @include _set_media() {
                 margin: _setValue($_li-margin);
                 line-height: _setValue($_li-lineHeight);
             }
@@ -167,7 +167,45 @@
     }
 
     ul {
-        list-style-type: $_list-style;
+        position: relative;
+        list-style-type: $_ul-style;
+
+        @if( $_ul-style == 'none') {
+            li {
+                &::before {
+                    position: absolute;
+                    left: 1em;
+                    color: $color-dark;
+                    line-height: inherit;
+
+                    content: '•';
+
+                }
+            }
+        }
+    }
+
+    ol {
+        position: relative;
+        list-style-type: $_ol-style;
+
+        @if( $_ol-style == 'none') {
+
+            counter-reset: ol;
+
+            li {
+                &::before {
+                    position: absolute;
+                    left: 1em;
+                    color: $color-dark;
+                    line-height: inherit;
+
+                    content: counter(ol);
+                    counter-increment: ol;
+                    
+                }
+            }
+        }
     }
 
     dl {

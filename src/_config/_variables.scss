@@ -156,21 +156,16 @@ $_p-lineHeight: (
 ) !default;
 
 $_list-padding: 0 0 0 2em !default;
-$_list-style: circle !default;
+$_ul-style: none !default;
+$_ol-style: none !default;
 $_li-margin: (
     xl: 0 0 .8em 0,
     lg: 0 0 .6em 0,
     md: 0 0 .6em 0,
-    sm: 0 0 .7em 0, 
+    sm: 0 0 .7em 0,
     xs: 0 0 .7em 0,
 ) !default;
-$_li-lineHeight: (
-    lx: 1.94,
-    lg: 1.94,
-    md: 1.94,
-    sm: 1.9,
-    xs: 1.9,
-) !default;
+$_li-lineHeight: $_p-lineHeight !default;
 
 $_table-padding: 5px 10px !default;
 
