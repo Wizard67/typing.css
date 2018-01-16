@@ -286,17 +286,6 @@
         @extend %blockElement-margin;
         padding: $_blockquote-padding;
         border-left: $_blockquote-style;
-
-        *{
-            &:first-child {
-                margin-top: 0;
-            }
-
-            &:last-child {
-                margin: 0;
-                margin-bottom: 0;
-            }
-        }
     }
 
     img {
