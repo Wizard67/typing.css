@@ -138,6 +138,7 @@
     hr {
         @extend %blockElement-margin;
         border: none;
+        border-bottom: 1px $color-light solid;
     }
 
     p {
