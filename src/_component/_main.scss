@@ -216,8 +216,9 @@
         }
 
         dd {
-            margin: 0;
-            margin-bottom: 10px;
+            @include _set_media() {
+                margin: _setValue($_dd-margin);
+            }
         }
     }
 
