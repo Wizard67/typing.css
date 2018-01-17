@@ -6,23 +6,21 @@
 
 @font-face {
     font-family: "Punctuation";
-    src:
-        local("PingFang SC"),
-        local("Hiragino Sans GB"),
-        local("Microsoft YaHei UI Light"),
-        local("Microsoft YaHei Light"),
-        local("Microsoft YaHei")
-    ;
+    src: local("PingFang SC"),
+         local("Hiragino Sans GB"),
+         local("Microsoft YaHei UI Light"),
+         local("Microsoft YaHei Light"),
+         local("Microsoft YaHei");
     unicode-range: U+3002, U+FF0C, U+3001, // [。], [，], [、]
                    U+FF1A, U+FF1B, // [：], [；]
-                   U+FF01, U+FF1F, // [!], [?]
-                   U+300C, U+300D, U+300E, U+300F // [「], [」], [『], [』]
-                   U+201C, U+2019, U+2018, U+2019 // [“], [”], [‘], [’]
-                   U+FF08, U+FF09, U+2E3A, U+2014 // [（], [）], [⸺], [—]
+                   U+FF01, U+203C, U+FF1F, U+2047, // [！], [‼], [？], [⁇]
+                   U+300C, U+300D, U+300E, U+300F, // [「], [」], [『], [』]
+                   U+201C, U+201D, U+2018, U+2019, // [“], [”], [‘], [’]
+                   U+FF08, U+FF09, U+2E3A,  // [（], [）], [⸺], 
                    U+3010, U+3011, U+3016, U+3017, U+3014, U+3015, U+FF3B, U+FF3D, U+FF5B, U+FF5D, // [【], [】], [〖], [〗], [〔], [〕], [［], [］], [｛], [｝]
                    U+2026, // […]
-                   U+2013, U+FF5E, U+007E, // [–], [～], [~]
-                   U+00B7, // [·]
+                   U+FF5E, U+002D, U+2013, U+2014, // [～], [-], [–], [—]
+                   U+00B7, U+30FB, U+2027, // [·], [・], [‧]
                    U+FE4F, U+300A, U+300B, U+3008, U+3009, // [﹏], [《], [》], [〈], [〉]
                    U+FF3F, // [＿]
                    U+002F, U+FF0F; // [/], [／]
@@ -30,12 +28,11 @@
 
 @include _font-family($use-global-font) {
 
-    font-family: "Emphasis","Punctuation",
+    font-family: "Emphasis", "Punctuation",
                  -apple-system, BlinkMacSystemFont,
                  "Helvetica Neue", "Segoe UI", "Roboto",
                  "PingFang SC", "Hiragino Sans GB",
                  "Microsoft YaHei UI Light", "Microsoft YaHei Light"," Microsoft YaHei",
-                 "Microsoft YaHei",
                  "Noto Sans CJK",
                  "WenQuanYi Micro Hei",
                  sans-serif;
