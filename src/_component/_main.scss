@@ -143,9 +143,7 @@
 
     p {
         @extend %blockElement-textAlign;
-        -webkit-hyphens: auto;
-            -ms-hyphens: auto;
-                hyphens: auto;
+        hyphens: auto;
         word-wrap: break-word;
         
         @include _set_media() {
