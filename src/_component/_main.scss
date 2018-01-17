@@ -1,7 +1,5 @@
 #{$namespace} {
 
-    font-weight: $fontWeight;
-    
     @include _set_media() {
         font-size: _setValue($fontSize);
         line-height: _setValue($lineHeight);

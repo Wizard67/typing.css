@@ -36,5 +36,8 @@
                  "Noto Sans CJK",
                  "WenQuanYi Micro Hei",
                  sans-serif;
+
+    color: $color-main;
     font-size: map-get($fontSize, xl);
+    font-weight: $fontWeight;
 };
