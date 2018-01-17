@@ -295,34 +295,4 @@
         margin: 0 auto;
     }
 
-    figure {
-        @extend %blockElement-margin;
-        overflow: hidden;
-
-        figcaption {
-            margin: 0;
-            margin-bottom: 0;
-        }
-
-        p {
-            margin: 0;
-            margin-bottom: .4em;
-        }
-
-        ul, ol, pre, table, img, .typing-wrap {
-            margin: 0;
-            margin-bottom: 0;
-        }
-
-        img {
-            display: block;
-            box-sizing: border-box;
-            max-width: 100%;
-            height: auto;
-            max-height: inherit;
-            margin: auto;
-        }
-
-    }
-
 }
