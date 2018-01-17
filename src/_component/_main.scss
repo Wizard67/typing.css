@@ -295,4 +295,12 @@
         margin: 0 auto;
     }
 
+
+    // ensted element
+    p, li, dt, dd, th, td, blockquote {
+        *:last-child, {
+            margin: 0;
+        }
+    }
+
 }
