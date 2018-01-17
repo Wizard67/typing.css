@@ -268,7 +268,8 @@
         display: inline-block;
         max-width: 100%;
         border: 1px solid $color-light;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
         word-break: keep-all;
     
