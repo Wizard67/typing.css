@@ -143,7 +143,10 @@
 
     p {
         @extend %blockElement-textAlign;
-        hyphens: auto;
+        -webkit-hyphens: auto;
+           -moz-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
         word-wrap: break-word;
         
         @include _set_media() {
@@ -245,7 +248,9 @@
 
     pre {
         @extend %blockElement-margin;
-        tab-size: $_pre_tabSize;
+        -moz-tab-size: $_pre_tabSize;
+          -o-tab-size: $_pre_tabSize;
+             tab-size: $_pre_tabSize;
         padding: $_pre-padding;
         border: 1px solid $color-light;
 
