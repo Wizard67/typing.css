@@ -72,12 +72,12 @@ $_blockElement-textAlign: (
     xs: justify,
 ) !default;
 
-$_h-lineHeight:  1.4 !default;
+$_h-lineHeight:  1.2 !default;
 
 $_h1-textAlign: (
-    xl: center,
-    lg: center,
-    md: center,
+    xl: left,
+    lg: left,
+    md: left,
     sm: left,
     xs: left,
 ) !default;
@@ -85,22 +85,22 @@ $_h1-textAlign: (
 $_h1-fontSize: (
     xl: 1.6rem,
     lg: 1.6rem,
-    md: 1.5rem,
+    md: 1.4rem,
     sm: 1.4rem,
-    xs: 1.3rem 
+    xs: 1.4rem,
 ) !default;
 $_h2-fontSize: (
-    xl: 1.4rem,
-    lg: 1.4rem,
-    md: 1.3rem,
-    sm: 1.2rem,
-    xs: 1.14rem,
-) !default;
-$_h3-fontSize: (
-    xl: 1.2rem,
-    lg: 1.2rem,
+    xl: 1.3rem,
+    lg: 1.3rem,
     md: 1.2rem,
     sm: 1.2rem,
+    xs: 1.2rem,
+) !default;
+$_h3-fontSize: (
+    xl: 1.1rem,
+    lg: 1.1rem,
+    md: 1.1rem,
+    sm: 1.1rem,
     xs: 1.1rem,
 ) !default;
 $_ho-fontSize: (
@@ -116,28 +116,28 @@ $_h1-margin: (
     lg: 0 0 2.2em 0,
     md: 0 0 2em 0,
     sm: 0 0 1.8em 0,
-    xs: 0 0 1.2em 0,
+    xs: 0 0 1.8em 0,
 ) !default;
 $_h2-margin: (
-    xl: 3.8em 0 1.4em 0,
-    lg: 2.8em 0 1.4em 0,
-    md: 2.6em 0 1.3em 0,
-    sm: 2.2em 0 1.2em 0,
-    xs: 2.2em 0 1.2em 0,
+    xl: 3.96em 0 1.8rem 0,
+    lg: 4.36em 0 1.98rem 0,
+    md: 4em 0 1.82rem 0,
+    sm: 3.52em 0 1.6rem 0,
+    xs: 3.96em 0 1.8rem 0,
 ) !default;
 $_h3-margin: (
-    xl: 2em 0 .8em 0,
-    lg: 1.8em 0 .6em 0,
-    md: 1.8em 0 .6em 0,
-    sm: 1.6em 0 .6em 0,
-    xs: 1.4em 0 .6em 0,
+    xl: 3.24em 0 1.8rem 0,
+    lg: 3.56em 0 1.98rem 0,
+    md: 3.28em 0 1.82rem 0,
+    sm: 2.88em 0 1.6rem 0,
+    xs: 3.24em 0 1.8rem 0,
 ) !default;
 $_ho-margin: (
-    xl: 1.6em 0 .6em 0,
-    lg: 1.2em 0 .6em 0,
-    md: 1.2em 0 .6em 0,
-    sm: 1.2em 0 .8em 0,
-    xs: 1.2em 0 .6em 0,
+    xl: 2.88em 0 1.8rem 0,
+    lg: 3.16em 0 1.98rem 0,
+    md: 2.9em 0 1.82rem 0,
+    sm: 2.56em 0 1.6rem 0,
+    xs: 2.88em 0 1.8rem 0,
 ) !default;
 
 $_p-margin: (

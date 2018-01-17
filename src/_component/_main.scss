@@ -86,9 +86,9 @@
     
     // block element
     %h-font {
-        font-family: serif;
         font-weight: $fontWeight-focus;
         line-height: $_h-lineHeight;
+        letter-spacing: .1em;
     }
 
     h1 {
@@ -115,12 +115,12 @@
             font-size: _setValue($_h2-fontSize);
         }
         h3 {
-            font-size: _setValue($_h3-margin);
-            line-height: _setValue($_h3-fontSize);
+            margin: _setValue($_h3-margin);
+            font-size: _setValue($_h3-fontSize);
         }
         h4, h5, h6 {
+            margin: _setValue($_ho-margin);
             font-size: _setValue($_ho-fontSize);
-            line-height: _setValue($_ho-margin);
         }
     }
 
