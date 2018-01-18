@@ -7,7 +7,8 @@
     "watch": "node-sass src/typing.scss dist/typing.css --watch",
     "build": "node-sass src/typing.scss dist/typing.css --output-style expanded && node-sass src/typing.scss dist/typing.min.css --output-style compressed --source-map true",
     "sync": "browser-sync start --server --files dist,demo --startPath demo",
-    "dev": "run-p watch sync"
+    "dev": "run-p watch sync",
+    "postcss": "postcss dist/typing.css --output dist/typing.css"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,11 @@
   },
   "homepage": "https://github.com/Wizard67/typing.css#readme",
   "devDependencies": {
+    "autoprefixer": "^7.2.5",
     "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
     "node-sass": "^4.7.2",
-    "npm-run-all": "^4.1.2"
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
   }
 }
