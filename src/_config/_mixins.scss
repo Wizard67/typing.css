@@ -19,19 +19,19 @@
     $hasNone: false;
 
     @each $value in $list {
-        @if( $value == column ){ -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-        @if( $value == wrap ){ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-        @if( $value == start ){ -webkit-box-pack: start; -webkit-justify-content: start; -ms-flex-pack: start; justify-content: start; }
-        @if( $value == center ){ -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
-        @if( $value == end ){ -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
-        @if( $value == top ){ -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
-        @if( $value == middle ){ -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-        @if( $value == bottom ){ -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
-        @if( $value == between ){ -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-        @if( $value == around ){ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
-        @if( $value == tight ){ -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; }
-        @if( $value == auto ){ -webkit-box-flex: 1; -webkit-flex: auto; -ms-flex: auto; flex: auto; }
-        @if( $value == none ){ -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none; $hasNone: true;}
+        @if( $value == column ){ flex-direction: column; }
+        @if( $value == wrap ){ flex-wrap: wrap; }
+        @if( $value == start ){ justify-content: start; }
+        @if( $value == center ){ justify-content: center; }
+        @if( $value == end ){ justify-content: flex-end; }
+        @if( $value == top ){ align-items: flex-start; }
+        @if( $value == middle ){ align-items: center; }
+        @if( $value == bottom ){ align-items: flex-end; }
+        @if( $value == between ){ justify-content: space-between; }
+        @if( $value == around ){ justify-content: space-around; }
+        @if( $value == tight ){ align-content: flex-start; }
+        @if( $value == auto ){ flex: auto; }
+        @if( $value == none ){ flex: none; $hasNone: true;}
     }
 
     @if( $hasNone != true ){ width: 100%; }
