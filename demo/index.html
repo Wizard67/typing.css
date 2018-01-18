@@ -27,26 +27,27 @@
 
 		/*main page width*/
 		@media (max-width:544px){
-		  body{padding: 0 .05rem;}
+		  body{padding: 0 10px;}
 		  article{padding: .2rem .2rem .4rem .2rem;padding: 4vw 4vw 8vw 4vw;}
 		}
 		@media (min-width: 545px) and (max-width:768px){
-		  body{padding: 0 .05rem;}
-		  article{padding: .4rem .4rem .6rem .4rem;padding: 4vw 4vw 8vw 4vw;}
+		  body{padding: 0 10px;}
+		  .main{max-width: 1000px;}
+		  article{padding: 56.250px 56.250px 75px 56.250px;}
 		}
 		@media (min-width: 769px) and (max-width:992px){
-		  body{padding: 0 0.5rem;}
-		  .main{max-width: 99.2rem;}
-		  article{padding: .6rem .6rem .8rem .6rem;}
+		  body{padding: 0 10px;}
+		  .main{max-width: 1000px;}
+		  article{padding: 56.250px 56.250px 75px 56.250px;}
 		}
 		@media (min-width: 993px) and (max-width:1380px){
-			body{padding: 0 0.5rem;}
-		  .main{max-width: 100rem;}
-		  article{padding: .8rem .8rem 1rem .8rem;}
+		  body{padding: 0 10px;}
+		  .main{max-width: 889.25px;}
+		  article{padding: 80px 80px 100px 80px;}
 		}
 		@media (min-width: 1381px){
 		  .main{width: 1062.5px;}
-		  article{padding: 106.25px;}
+		  article{padding:  106.25px 106.25px 127.5px 106.25px;}
 		}
 
 		::-webkit-scrollbar {-webkit-appearance: none;width: 8px;height: 8px;}
@@ -64,9 +65,7 @@
 <body>
 	<div class="main">
 		<article class="typing">
-			<header>
-				<h1>中文排版：<a href="https://github.com/Wizard67/typing.css">typing.css</a></h1>
-			</header>
+			<h1>中文排版：<a href="https://github.com/Wizard67/typing.css">typing.css</a></h1>
 			<main>
 				<p>typing.css 是一个负责页面文字排版的 CSS 组件，通过对常用 HTML 文本标签进行样式重置以提供更为舒适的中文排版效果，并且致力于解决以下问题：</p>
 				<ul>
@@ -79,7 +78,7 @@
 					<li>
 						<dl>
 						  <dt>重视中文排版效果</dt>
-						  <dd>重置部分标签样式，使之符合<a href="https://www.w3.org/TR/2015/WD-clreq-20150723/">中文排版需求</a>。</dd>
+						  <dd>重置部分标签样式，使之符合<a href="https://www.w3.org/TR/clreq/">中文排版需求</a>。</dd>
 						</dl>
 					</li>
 					<li>
@@ -90,13 +89,13 @@
 					</li>
 				</ul>
 				<h2>如何使用</h2>
-				<p>你可以在<a href="https://github.com/Wizard67/typing.css">Github</a>中下载到 typing.css。</p>
-				<p>于<code>&#60;head&#62;</code>中引入css后，在容器标签中添加<code>class="typing"</code>即可。</p>
-				<div class="typing-wrap">
+				<p>你可以在 <a href="https://github.com/Wizard67/typing.css">Github</a> 中下载到 typing.css。</p>
+				<p>于 <code>&#60;head&#62;</code> 中引入css后，在容器标签中添加 <code>class="typing"</code> 即可。</p>
+				<div class="typing-autoWrap">
 					<pre><code>&#60;head&#62;<br>	&#60;link rel="stylesheet" type="text/css" href="./css/typing.css"&#62;<br>&#60;/head&#62;<br>&#60;body&#62;<br>	&#60;article class="typing"&#62;<br>		...<br>	&#60;/article&#62;<br>&#60;/body&#62;</code></pre>
 				</div>
 				<h2>排版效果</h2>
-				<p>为了满足中文排版的需求，<code>typing.css</code>为<code>inline boxes</code>设置了合适的<code>line-height</code>，使之在显示中文时行间不会显得太过拥挤。以下两段排版实例来自<abbr title="亚瑟·叔本华（Arthur Schopenhauer），德国著名哲学家">叔本华</abbr><i>Aphorismen zur Lebensweisheit</i>的中英文翻译。</p>
+				<p>为了满足中文排版的需求，<code>typing.css</code> 为 <code>inline boxes</code> 设置了合适的 <code>line-height</code>，使之在显示中文时行间不会显得太过拥挤。以下两段排版实例来自 <abbr title="亚瑟·叔本华（Arthur Schopenhauer），德国著名哲学家">叔本华</abbr> Aphorismen zur Lebensweisheit 的中英文翻译。</p>
 				<h3>中文排版实例：</h3>
 				<blockquote>
 					<p>《人生的智慧》，韦启昌译（第23-24页）：</p>
@@ -104,11 +103,11 @@
 				<p>同样，耶稣说：“愚人的生活比死亡还要槽糕。”因此，我们可以发现：大致而言，一个人对与人交往的爱好程度，跟他的智力的平庸及思想的贫乏成正比。<em>人们在这个世界上要么选择独处，要么选择庸俗，除此以外再没有更多别的选择了。</em></p>
 				<h3>英文排版实例：</h3>
 				<blockquote>
-					<p><i>The Wisdom of Life</i>, translated by Bailey Saunders (page 62)：</p>
+					<p>The Wisdom of Life, translated by Bailey Saunders (page 62)：</p>
 				</blockquote>
 				<p>A very true saying, with which may be compared the words of Jesus, the son of Sirach, The life of a fool is worse than death. And, as a rule, it will be found that a man is sociable just in the degree in which he is intellectually poor and generally vulgar. <strong>For one's choice in this world does not go much strongeyond solitude on one side and vulgarity on the other. </strong></p>
 				<h2>标签列表</h2>
-				<div class="typing-wrap">
+				<div class="typing-autoWrap">
 					<table>
 					  <thead>
 					  <tr>
@@ -121,7 +120,7 @@
 					  <tr>
 					  	<td>全局</td>
 					  	<td><code>.typing</code></td>
-					  	<td>默认字体颜色:<code>#1d2935</code>，字号和行高响应分辨率。</td>
+					  	<td>默认字体颜色: <code>#07090c</code>，字号和行高响应分辨率。</td>
 					  </tr>
 					  <tr>
 					    <td>标题</td>
@@ -136,22 +135,22 @@
 					  <tr>
 					  	<td>段落</td>
 					  	<td><code>&#60;p&#62;</code></td>
-					  	<td>默认无缩进，如需缩进可在其父级容器上添加<code>class="typing-indent"</code>。</td>
+					  	<td>设置合适的行高与段间距。</td>
 					  </tr>
 					  <tr>
 					    <td>列表</td>
-					    <td><code>&#60;ul&#62;</code>|<code>&#60;ol&#62;</code>|<code>&#60;dl&#62;</code></td>
+					    <td><code>&#60;ul&#62;</code> | <code>&#60;ol&#62;</code> | <code>&#60;dl&#62;</code></td>
 					    <td>修改无序和有序列表的列表符号，统一排版风格；增强定义列表联系。</td>
 					  </tr>
 					  <tr>
 					    <td>表格</td>
 					    <td><code>&#60;table&#62;</code></td>
-					    <td>重置默认样式。表格外层容器添加<code>class="typing-wrap"</code>，可响应式支持。</td>
+					    <td>重置默认样式。表格外层容器添加<code>class="typing-autoWrap"</code>，可响应式支持。</td>
 					  </tr>
 					  <tr>
 					    <td>代码块</td>
 					    <td><code>&#60;pre&#62;</code></td>
-					    <td>设置等宽字体。外层容器可添加<code>class="typing-wrap"。</td>
+					    <td>设置等宽字体。外层容器可添加<code>class="typing-autoWrap"。</td>
 					  </tr>
 					  <tr>
 					    <td>引用块</td>
@@ -162,11 +161,6 @@
 					    <td>内容块</td>
 					    <td><code>&#60;figure&#62;</code></td>
 					    <td>添加外边距，可包裹其他样式列表内的标签。</td>
-					  </tr>
-					  <tr>
-					    <td>参考</td>
-					    <td><code>&#60;cite&#62;</code></td>
-					    <td>可设置参考文献的引用列表，正体，小号字。</td>
 					  </tr>
 					  <tr>
 					    <td>短引用</td>
@@ -181,7 +175,7 @@
 					  <tr>
 					  	<td>代码</td>
 					  	<td><code>&#60;code&#62;</code></td>
-					  	<td>继承全局字体，颜色设置为:<code>rgba(90, 9, 9, 0.8)</code>。</td>
+					  	<td>继承全局字体。</td>
 					  </tr>
 					  <tr>
 					    <td>着重</td>
@@ -205,31 +199,13 @@
 					  </tr>
 					  <tr>
 					    <td>上下标</td>
-					    <td><code>&#60;sup&#62;</code>|<code>&#60;sub&#62;</code></td>
-					    <td>固定字号为<code>12px</code>，行高为<code>1</code>。</td>
-					  </tr>
-
-					  <tr>
-					    <td>斜体</td>
-					    <td><code>&#60;i&#62;</code></td>
-					    <td>保持英文斜体习惯。</td>
-					  </tr>
-
-					  <tr>
-					    <td>辅助字</td>
-					    <td><code>&#60;small&#62;</code></td>
-					    <td>辅助文本，降低了字号和颜色的权重。</td>
-					  </tr>
-
-					  <tr>
-					    <td>数据</td>
-					    <td><code>&#60;data&#62;</code></td>
-					    <td>对于<code>open type</code>字体使用<code>frac</code>样式集。</td>
+					    <td><code>&#60;sup&#62;</code> | <code>&#60;sub&#62;</code></td>
+					    <td>字号为<code>0.8em</code>，行高为<code>1</code>。</td>
 					  </tr>
 					  <tr>
 					    <td>图片</td>
 					    <td><code>&#60;img&#62;</code></td>
-					    <td>设置两种行内图片和块图片两种效果，具体见详解部分。</td>
+					    <td>居中显示。</td>
 					  </tr>
 					  </tbody>
 					</table>
@@ -240,18 +216,15 @@
 					<li><del>&#60;del&#62; 删除</del></li>
 					<li>上标<sup>&#60;sup&#62;</sup> —— 下标<sub>&#60;sub&#62;</sub></li>
 					<li><code>&#60;code&#62; 代码</code></li>
-					<li><i>&#60;i&#62;Italic</i>英文斜体</li>
 					<li><em>&#60;em&#62; 着重（webkit 内核显示着重号，IE 显示粗体）</em></li>
 					<li><strong>&#60;strong&#62; 强调</strong></li>
-					<li>Normal text<small>&#60;small&#62;小号辅助文本</small></li>
-					<li><data>&#60;datd&#62; frac 样式集 1/2</data></li>
 					<li><a href="###">&#60;a&#62; 链接</a></li>
 				</ul>
 				<h2>样式详解</h2>
 				<h3>font 与版面</h3>
-				<p>typing.css 会根据<code>媒体查询</code>自动调整合适的 font 属性和版面边距。</p>
-				<figure>
-					<div class="typing-wrap">
+				<p>typing.css 会根据 <code>媒体查询</code> 自动调整合适的 font 属性和版面边距。</p>
+
+					<div class="typing-autoWrap">
 						<table>
 							<thead>
 								<tr>
@@ -307,31 +280,9 @@
 							</tbody>
 						</table>
 					</div>
-					<small>* font-size: 0.16rem</small>
-				</figure>
-				<p># 由于耦合的原因，移除了<code>.typing</code>的页面边距。如果需要这个 DOME 的边距效果可以根据表格中的参数自行设定。</p>
-				<h3>页面结构</h3>
-				<p>HTML5 注重语义结构，这样不仅能够提高可读性，并且有利于搜索引擎的优化。推荐使用以下的结构进行组织代码。</p>
-				<div class="typing-wrap">
-					<pre><code>...<br>&#60;article class="typing"&#62;<br>	&#60;header&#62;<br>		&#60;h1&#62;题目&#60;/h1&#62;<br>	&#60;/header&#62;<br>	&#60;main&#62;<br>		&#60;h2&#62;标题 1&#60;/h2&#62;<br>		&#60;p&#62;...&#60;/p&#62;<br>		&#60;h3&#62;标题 1.1&#60;/h3&#62;<br>		&#60;p&#62;....&#60;/p&#62;<br>		&#60;h3&#62;标题 1.2&#60;/h3&#62;<br>		&#60;p&#62;....&#60;/p&#62;<br>		...<br>	&#60;/main&#62;<br>	&#60;footer&#62;<br>		&#60;cite&#62;...&#60;/cite&#62;<br>	&#60;/footer&#62;<br>&#60;/article&#62;<br>...</code></pre>
-				</div>
-				<h3>内容块</h3>
-				<p>使用<code>&#60;figure&#62;</code>标签，可以对图片、表格、代码块等结构进行包裹，形成内容块，还可以使用<code>&#60;figcaption&#62;</code>标签为内容块添加一个标题，或者<code>&#60;small&#62;</code>标签来添加注释。</p>
-				<figure>
-					<figcaption><code>&#60;figure&#62;</code>的结构示例</figcaption>
-					<pre><code>&#60;figure&#62;<br>	&#60;figcaption&#62;结构示例&#60;/figcaption&#62;<br>	&#60;pre&#62;<br>		&#60;code&#62;<br>			...<br>		&#60;/code&#62;<br>	&#60;/pre&#62;<br>	&#60;small&#62;*注释部分&#60;/small&#62;<br>&#60;/figure&#62;</code></pre>
-					<small>* 注释部分</small>
-				</figure>
+
 				<h3>图片</h3>
-				<p>在图片的排版处理上，会有两种不同的情况。一是使用行内图片来显示不能被支持的字型，如数学符号或者偏僻字。二是引用一张独立的展示图片。因此，可以直接使用<code>&#60;img&#62;</code>标签创建行内图片，或者使用<code>&#60;figure&#62;</code>标签包裹<code>&#60;img&#62;</code>，来显示大图片。</p>
-				<p>行内的图片：数学公式：<img src="gongshi.png">，图片尺寸毋太大，以免突破容器限制。</p>
-				<p>独立的照片</p>
-				<figure>
-					<img src="test.png">
-					<small>图片来源自网络</small>
-				</figure>
-				<h2>浏览器支持</h2>
-				<p>因资源限制，没有对所有浏览器进行测试。不过可以明确的是，对于<code>IE</code>浏览器只支持 9 及其以上的版本，其他浏览器的渲染效果还是一致的。如果发现 BUG 或者愿意提供帮助的，可以提<a href="https://github.com/Wizard67/typing.css/issues">issues</a>或者<a href="mailto:wizard67.hjn@gmail.com">发邮件</a>。</p>
+				<img src="test.png">
 			</main>
 		</article>
 	</div>
