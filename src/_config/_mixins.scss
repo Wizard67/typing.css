@@ -52,10 +52,9 @@
 // iterate to set media query
 @mixin _set_media() {
     
-    @each $point in $breakpoints {
+    @each $point, $value in $breakpoints {
 
-        $__i: nth($point, 1) !global;
-        $value: nth($point, 2);
+        $__i: $point !global;
 
         @include _media( $value ) {
             @content;
