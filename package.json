@@ -4,11 +4,12 @@
   "description": "a component for type",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass src/typing.scss dist/typing.css --watch",
-    "build": "node-sass src/typing.scss dist/typing.css --output-style expanded && node-sass src/typing.scss dist/typing.min.css --output-style compressed --source-map true",
+    "_watch": "node-sass src/typing.scss dist/typing.css --watch",
+    "_build": "node-sass src/typing.scss dist/typing.css",
     "sync": "browser-sync start --server --files dist,demo --startPath demo",
-    "dev": "run-p watch sync",
-    "postcss": "postcss dist/typing.css --output dist/typing.css"
+    "dev": "run-p _watch sync",
+    "postcss": "postcss dist/typing.css --output dist/typing.css",
+    "build": "run-s _build postcss"
   },
   "repository": {
     "type": "git",
