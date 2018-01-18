@@ -104,6 +104,30 @@
         @extend %h-font;
     }
 
+    /* auto count the h */
+    @if ($use-h-count) {
+        $h-list: (1:h1, 2:h2, 3:h3, 4:h4, 5:h5, 6:h6);
+        @each $h-order, $h-team in $h-list {
+            #{$h-team} {
+                @if ($h-order > 1){
+                    counter-increment: $h-team;
+                    &::before {
+                        $h-string:'';
+                        @for $i from ($h-order) through 2 {
+                            $h-string: counter(h#{$i})$h-string;
+                            @if ($i > 2) {
+                            $h-string: "'.'"$h-string;
+                            }
+                        }
+                        content: #{$h-string}' ';
+                        // color: $color-dark;
+                    }
+                }
+                counter-reset: h#{$h-order + 1};
+            }
+        }
+    }
+
     @include _set_media() {
         h1 {
             margin: _setValue($_h1-margin);
