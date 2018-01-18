@@ -33,11 +33,6 @@
     em {
         @extend %inlineElement-margin;
         font-style: normal;
-        -webkit-text-emphasis: {
-            position: under left;
-            style: "\2022";
-            color: inherit;
-        }
         text-emphasis: {
             position: under left;
             style: "\2022";
